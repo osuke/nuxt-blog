@@ -1,8 +1,16 @@
+import axios from 'axios';
 
 export default {
   mode: 'universal',
   generate: {
-    fallback: true
+    routes () {
+      return axios.get('https://blog-funxion.herokuapp.com/wp-json/wp/v2/posts?per_page=100')
+        .then((res) => {
+          return res.data.map((post: any) => {
+            return `/${post.id}/`
+          })
+        })
+    }
   },
   /*
   ** Headers of the page

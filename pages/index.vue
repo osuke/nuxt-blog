@@ -5,7 +5,7 @@
       <Post
         v-for="post in res"
         :key="post.id"
-        :url="`/${post.id}`"
+        :url="`/${post.id}/`"
         :title="post.title.rendered"
         :date="formatDate(post.date)"
       />
