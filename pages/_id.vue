@@ -87,4 +87,8 @@ export default class index extends Vue {
   width: 100%;
   color: #fff;
 }
+
+.figure {
+  max-width: 100%;
+}
 </style>
