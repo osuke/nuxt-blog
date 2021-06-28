@@ -19,7 +19,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0",
     "nuxt-property-decorator": "^2.5.0",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.24.0",
     "reset-css": "^5.0.1",
     "vue-property-decorator": "^8.3.0"
   },
